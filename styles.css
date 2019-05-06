@@ -1,0 +1,247 @@
+menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+menu li{
+	display: inline-block;
+	margin-left: 10px;
+	padding: 7px;
+}
+
+menu a{
+	color: #BCC6CC;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 17px;
+	padding: 14px 16px;
+}
+
+menu a:hover{
+	background-color: #566D7E;
+	color: white;
+}
+
+#welcome a{
+	color: white;
+	padding: 20px;
+	font-size: 20pt;
+	text-transform: uppercase;	
+	text-decoration: none;
+}
+
+#welcome a:hover{
+	background-color:#566D7E;
+}
+
+#welcome{
+	text-align: center;
+	margin: 150px;	
+}
+
+img{
+	margin: 0 35px;
+}
+
+#header{
+	background-color: #3D2A26;
+}
+
+menu{
+	background-color: #25383C;
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #8a8a8a;
+}
+
+div{
+	color: white;
+}
+
+#register{
+	width: 500px;	/* width of registration form*/
+	margin: 25px auto;
+}
+
+#login{
+	width: 500px;	/* width of login form*/
+	margin: 25px auto;
+}
+
+#game_stats{
+	width: 500px;	/* width of game form*/
+	margin: 25px auto;
+}
+
+#controls{
+	width: 70px;	/* width of login form*/
+	margin: 25px auto;
+	display: inline-block;
+}
+#game_form{
+	padding:10px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+#game_form input{
+	height:20px;
+	width: 70px;
+}
+
+form{
+	padding: 20px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+form label,
+form input,
+form button {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+}
+form input {
+  height: 25px;
+  line-height: 25px;
+  background: #fff;
+  color: #000;
+  padding: 0 6px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+form button {
+  height: 30px;
+  line-height: 30px;
+  background: #e67e22;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+form .error {
+  color: #ff0000;
+}
+
+footer{
+	color: white;
+	position: fixed;
+	bottom:0;
+	width:80%;
+	height:30px;   /* Height of the footer */
+	text-align: center;
+}
+
+content{
+	min-height:100%;
+	position: relative;
+}
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /
+    padding: 20px;
+    border: 1px solid #888;
+     position: relative;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #2F4F4F;
+    color: #E4E4E4;
+}
+
+.modal-body {
+	padding: 2px 16px;
+	color: black;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #2F4F4F;
+    color:  #E4E4E4;
+}
+
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 600px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.newgameHolder {
+  text-align: center;
+}
+
+#newGame {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
