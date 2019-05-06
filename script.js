@@ -156,6 +156,38 @@ function login(){
 	}
 }
 
+
+var ballsMax = 91;	// Max is 90 but because of random we set to 91
+var ballsMin = 50;
+var lengthMin = 60;
+var lengthMax = 601;
+var monstersMax = 4; //Max is 3 but because of random function we set to 4
+var monstersMin = 1;
+//Randomize game stats foo
+function randomizeStats(){
+	var ballsRandom = Math.floor(Math.random() * (+ballsMax - +ballsMin) + +ballsMin); 
+	var lengthRandom = Math.floor(Math.random() * (+lengthMax - +lengthMin) + +lengthMin); 
+	var monstersRandom = Math.floor(Math.random() * (+monstersMax - +monstersMin) + +monstersMin); 
+	$('#balls_number').val(ballsRandom);
+	$('#game_time').val(lengthRandom);
+	$('#monsters').val(monstersRandom);
+	$('#color5').val(getRandomColor());
+	$('#color15').val(getRandomColor());
+	$('#color25').val(getRandomColor());
+}
+
+//Randomize colors and return random color
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+
+
 function start_stats(){
 	// upkey = $('#up').val();
 	// downkey = $('#down').val();
