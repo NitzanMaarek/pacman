@@ -164,7 +164,7 @@ var lengthMax = 601;
 var monstersMax = 4; //Max is 3 but because of random function we set to 4
 var monstersMin = 1;
 //Randomize game stats foo
-function randomizeStats(){
+function randomizestats(){
 	var ballsRandom = Math.floor(Math.random() * (+ballsMax - +ballsMin) + +ballsMin); 
 	var lengthRandom = Math.floor(Math.random() * (+lengthMax - +lengthMin) + +lengthMin); 
 	var monstersRandom = Math.floor(Math.random() * (+monstersMax - +monstersMin) + +monstersMin); 
